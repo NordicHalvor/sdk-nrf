@@ -542,8 +542,8 @@ For more details about AEAD key generation and backend configuration, see the :r
 Link-Time Optimization
 ----------------------
 
-Link-Time Optimization (LTO) lets the compiler optimize across source file boundaries when the application is linked.
-This may reduce the flash usage of the application image.
+Link-Time Optimization (LTO) lets the compiler optimize accross all compilation units, helping to
+reduce the overall size of a binary.
 
 To enable LTO, set the following options:
 
