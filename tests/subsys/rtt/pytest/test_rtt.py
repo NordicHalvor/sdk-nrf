@@ -69,10 +69,10 @@ def test_rtt_logging(dut: DeviceAdapter):
             'RTTSearchRanges': '0x20020000 0x20000',
         },
         'nrf54lc10dk@0.8.0/nrf54lc10a/cpuapp': {
-            'device': 'NRF54LV10A_M33',
+            'device': 'NRF54LC10A_M33',
         },
         'nrf54lc10dk@0.8.0/nrf54lc10a/cpuapp/ns': {
-            'device': 'NRF54LV10A_M33',
+            'device': 'NRF54LC10A_M33',
         },
         'nrf54lm20dk/nrf54lm20a/cpuapp': {
             'device': 'NRF54LM20A_M33',
@@ -121,6 +121,13 @@ def test_rtt_logging(dut: DeviceAdapter):
         # This enables automatic SEGGER RTT symbol detection by JLinkRTTLogger.
         # Update to the official nRF7120 device name when SEGGER adds support.
         'nrf7120dk/nrf7120/cpuapp': {
+            'device': 'nRF54L15_M33',
+        },
+        'nrf7120dk/nrf7120/cpuapp/ns': {
+            'device': 'nRF54L15_M33',
+            'RTTSearchRanges': '0x20018000 0xE6000',
+        },
+        'nrf7120dk/nrf7120e/cpuapp': {
             'device': 'nRF54L15_M33',
         },
         'nrf9251dk@0.1.0/nrf9251/cpuapp': {
